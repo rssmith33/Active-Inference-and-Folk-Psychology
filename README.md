@@ -6,7 +6,7 @@ This MATLAB file reproduces, and allows the user to customize, the simulations s
 
 Active inference models do not contradict folk psychology
 
-by:
+by
 
 Ryan Smith, Maxwell J. D. Ramstead, and Alex Kiefer
 
