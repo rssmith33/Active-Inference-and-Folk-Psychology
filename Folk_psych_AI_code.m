@@ -17,7 +17,7 @@ rng('shuffle') % This sets the random number generator to produce different
 % Simulation options after model building below:
 
 set_dislike = 1; % Larger value = greater dislike for not getting ice cream.
-                 % (keep at 1)
+                 % (keep at 1 when desire > 0, and set to 0 when desire = 0)
             
 set_desire = 1; % Desire parameter: larger value = more urgent desire for ice cream.
                 % Try values between 0 (pure epistemic drive) and 3 (strong
