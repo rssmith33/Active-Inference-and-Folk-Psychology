@@ -94,8 +94,8 @@ Ns = [length(D{1}) length(D{2})]; % number of states in each state factor (2 and
 for i = 1:Ns(2) 
 
     A{1}(:,:,i) = [1 1; % Darkness
-                   0 0; % Ice cream to the left
-                   0 0];% Ice cream to the right
+                   0 0; % See ice cream to the left
+                   0 0];% See ice cream to the right
 end
 
 % Then we specify that the 'light switch' behavior state generates
@@ -103,8 +103,8 @@ end
 % state.                
 
 A{1}(:,:,2) = [0 0;    % Darkness
-               1 0;    % Ice cream left
-               0 1];   % ice cream right
+               1 0;    % See ice cream to the left
+               0 1];   % See ice cream to the right
 
 % Next we specify the mapping between states and getting the ice cream or not. 
 % The first two behavior states ('stay' and 'flip switch') do not generate 
