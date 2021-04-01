@@ -100,14 +100,11 @@ end
 
 % Then we specify that the 'light switch' behavior state generates
 % observations about where the ice cream is, depending on the context
-% state. In this case, we will say the light is bright and there is no uncertainty. 
+% state.                
 
-brightness = 1; % 1 = full brightness, .5 = darkness, ~.7 = dim light 
-                
-
-A{1}(:,:,2) = [0     0;                    % Darkness
-               brightness 1-brightness;    % Ice cream left
-               1-brightness brightness];   % ice cream right
+A{1}(:,:,2) = [0 0;    % Darkness
+               1 0;    % Ice cream left
+               0 1];   % ice cream right
 
 % Next we specify the mapping between states and getting the ice cream or not. 
 % The first two behavior states ('stay' and 'flip switch') do not generate 
